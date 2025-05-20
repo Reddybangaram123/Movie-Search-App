@@ -1,0 +1,131 @@
+.watchlist-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.watchlist-header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.empty-watchlist {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.empty-watchlist .emoji {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.watchlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.watchlist-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.watchlist-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.watchlist-poster {
+  width: 60px;
+  height: 90px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.watchlist-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.watchlist-details {
+  flex: 1;
+}
+
+.watchlist-details h3 {
+  margin: 0 0 5px 0;
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.watchlist-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.remove-button {
+  background: rgba(255, 99, 71, 0.3);
+  border: none;
+  color: #9c1a03;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  pointer-events: auto;
+}
+
+.remove-button:hover {
+  background: rgba(144, 22, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .watchlist-container {
+    padding: 15px;
+  }
+  
+  .watchlist-header {
+    font-size: 1.3rem;
+  }
+  
+  .watchlist-card {
+    padding: 8px;
+  }
+  
+  .watchlist-poster {
+    width: 50px;
+    height: 75px;
+    margin-right: 10px;
+  }
+}

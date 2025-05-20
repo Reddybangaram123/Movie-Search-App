@@ -1,70 +1,131 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🎬 Movie Search App
 
-## Available Scripts
+A modern, responsive React app to search, explore, and manage your favorite movies. Integrated with the TMDb API, this app allows you to search for any movie, view detailed information, and discover which OTT platform it's available on. You can also maintain a watchlist — all in a clean, interactive interface.
 
-In the project directory, you can run:
+## 🔗 Live Demo
 
-### `npm start`
+👉 [View Project on GitHub Pages](https://reddybangaram123.github.io/Movie-Search-App/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📌 Features
 
-### `npm test`
+- 🔍 **Search movies** by title using the TMDb API
+- 📖 **View detailed movie info** including overview, release date, and rating
+- 📺 **Check OTT availability** with logos like Netflix, Prime Video, etc.
+- ⭐ **Add movies to your Watchlist** using localStorage
+- 💻 **Responsive design** with Tailwind CSS
+- 🧭 Simple and intuitive UI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+Movie-Search-App/
+├── public/
+├── src/
+│   ├── assets/                # Images and icons
+│   ├── components/            # Reusable components like MovieCard, MovieModal
+│   ├── App.js                 # Main component
+│   ├── index.js               # Entry point
+│   └── styles.css             # Tailwind or global styles
+├── .env                       # TMDb API key
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Installation and Setup
 
-### `npm run eject`
+### 1. Clone the Repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/Reddybangaram123/Movie-Search-App.git
+cd Movie-Search-App
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Install Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Add Your API Key
 
-## Learn More
+Create a `.env` file in the root directory and paste your TMDb API key:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```env
+REACT_APP_TMDB_API_KEY=your_tmdb_api_key_here
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Get your TMDb API key from [https://developer.themoviedb.org/](https://developer.themoviedb.org/)
 
-### Code Splitting
+### 4. Start the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+The app will run on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🖼️ UI Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Search Movies | View Movie Details | OTT Availability |
+|---------------|---------------------|------------------|
+| ![Search](./screenshots/search.png) | ![Details](./screenshots/details.png) | ![OTT](./screenshots/ott.png) |
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🚀 Technologies Used
 
-### Deployment
+- **React.js** — Functional components and hooks
+- **Tailwind CSS** — For styling
+- **Axios** — For API requests
+- **TMDb API** — Movie and OTT provider data
+- **LocalStorage** — For storing the watchlist
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## ❗ Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If OTT availability shows `Not available in your region`, it means the TMDb API did not return OTT data for that country. Ensure your region is correctly set in the API request or use a VPN to test other regions.
+
+---
+
+## 📦 Deployment
+
+This app is deployed using **GitHub Pages**. To deploy:
+
+```bash
+npm run build
+npm run deploy
+```
+
+> Ensure `"homepage"` is correctly set in `package.json` for GitHub Pages.
+
+---
+
+## 🙌 Credits
+
+- Movie data powered by [TMDb API](https://www.themoviedb.org/)
+- Provider logos via TMDb
+- Netflix logo used under fair use for educational purposes
+
+---
+
+## 📜 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Developed By
+
+**Kummitha Gopal Reddy**
+
+GitHub: [@Reddybangaram123](https://github.com/Reddybangaram123)
