@@ -5,7 +5,7 @@ A modern, responsive React app to search, explore, and manage your favorite movi
 
 ## 🔗 Live Demo
 
-👉 [View Project on GitHub Pages](https://reddybangaram123.github.io/Movie-Search-App/)
+👉 [View Project on GitHub Pages](https://movie-search-app-alpha-tawny.vercel.app/)
 
 ---
 
